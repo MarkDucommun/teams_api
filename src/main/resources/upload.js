@@ -39,7 +39,7 @@ function uploadPhoto(file, callback) {
 
 function setPlayers() {
 
-    var url = "/players"
+    var url = "/players";
 
     var xhr = new XMLHttpRequest();
 

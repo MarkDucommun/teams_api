@@ -10,19 +10,15 @@
 </head>
 <body style="margin: 0; overflow: hidden">
 
-<input type="file" id="uploader" class="file" style="margin: 10px; size: 32px;" accept="image/*">
-
 <div class="flex">
 
     <div class="loader hide">Loading...</div>
 
-    <img id="preview" class="hide">
+    <img id="image">
 
-    <input type="number" max="244" min="84" >
+    <input id="score" type="number" max="244" min="84" value="180" autofocus>
 
-    <div class="button hide" id="submit">Submit</div>
-
-    <div class="hide" id="thanks">Thanks! Your score will appear on the leaderboard shortly</div>
+    <div class="button" id="submit">Submit</div>
 </div>
 
 <script src="upload.js"></script>
