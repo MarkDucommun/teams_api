@@ -20,3 +20,8 @@ internal val scores
 internal fun List<Score>.overwriteScores() {
     client.overwrite("scores", this, Score::toCsvLine)
 }
+
+internal fun List<Score>.updateScore(score: Score) {
+
+    filterNot { it.id == score.id }.plus(score).overwriteScores()
+}

@@ -30,7 +30,7 @@ function getLastRace() {
 
             if (xhr.response == "no more unscored races") {
 
-                window.location = "/leaderboard"
+                window.location = "/upload"
 
             } else {
                 lastRace = JSON.parse(xhr.response);

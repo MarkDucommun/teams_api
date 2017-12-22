@@ -7,9 +7,11 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.scheduling.annotation.EnableScheduling
 import java.io.File
 
 @SpringBootApplication
+@EnableScheduling
 class TeamsApiApplication
 
 fun main(args: Array<String>) {

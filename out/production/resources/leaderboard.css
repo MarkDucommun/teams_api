@@ -1,3 +1,48 @@
+/* Tables
+================================== */
+.Rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 3em 0;
+    padding: 0;
+}
+
+.Rtable-cell {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none;
+    border: solid 2px white;
+}
+
+.rank {
+    flex-basis: 20%;
+}
+
+.value {
+    flex-basis: 25%;
+}
+
+.players {
+    flex-basis: 55%;
+}
+
+.Rtable--3cols > .Rtable-cell {
+    width: 33.33%;
+}
+
+.header {
+    font-weight: bold;
+}
+
+/* Page styling
+================================== */
+html {
+    height: 100%;
+    background-color: #EEE;
+}
+
 body {
     box-sizing: border-box;
     min-height: 100%;
@@ -6,63 +51,10 @@ body {
     max-width: 100%;
     font-family: monospace;
     font-size: 1.2em;
-    background-color: #f1f1f1;
+    background-color: white;
+    border: double 3px #DDD;
     border-top: none;
     border-bottom: none;
-}
-
-select {
-    border: none;
-    font-size: 1.5em;
-    font-family: monospace;
-    background-color: #f1f1f1;
-    text-shadow: 0 2px 2px rgba(2, 2, 2, 0.2);
-    -webkit-appearance: none;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.file {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-
-.button {
-    font-family: monospace;
-    font-size: 3em;
-    text-align: center;
-    color: #222222;
-    padding: 0.4em;
-    background: #eeeeee;
-    text-shadow: 0 2px 2px rgba(2, 2, 2, 0.2);
-    margin: 1em;
-}
-
-#thanks {
-    font-family: monospace;
-    font-size: 2em;
-    text-align: center;
-    color: #222222;
-    padding: 1em;
-    text-shadow: 0 2px 2px rgba(2, 2, 2, 0.2);
-}
-
-.button:hover {
-    cursor: pointer;
-}
-
-#preview {
-    max-width: 100%;
-    box-shadow: 0 4px 4px -1px rgba(2, 2, 2, 0.2);
 }
 
 .loader,

@@ -7,9 +7,9 @@ import reactor.core.publisher.toMono
 @RestController
 class RacesController {
 
-    @GetMapping(value = "/races/last")
+    @GetMapping(value = "/races/last-unscored")
     fun last(): Mono<String> {
-        return races.last().let { race ->
+        return races.filterNot { it.hasScore }.lastOrNull()?.let { race ->
             images.find { race.imageId == it.id }?.run {
                 mapOf(
                     "race" to mapOf(
@@ -20,8 +20,8 @@ class RacesController {
                         )
                     )
                 ).asJson.toMono()
-            } ?: Mono.just("")
-        }
+            }
+        } ?: Mono.just("no more unscored races")
     }
 
     @PostMapping(value = "/races/{id}/delete")

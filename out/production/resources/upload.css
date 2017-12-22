@@ -1,23 +1,7 @@
-body {
-    box-sizing: border-box;
-    min-height: 100%;
-    margin: 0 auto;
-    padding: 2em;
-    max-width: 100%;
-    font-family: monospace;
-    font-size: 1.2em;
-    background-color: #f1f1f1;
-    border-top: none;
-    border-bottom: none;
-}
-
 select {
     border: none;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-family: monospace;
-    background-color: #f1f1f1;
-    text-shadow: 0 2px 2px rgba(2, 2, 2, 0.2);
-    -webkit-appearance: none;
 }
 
 .flex {
@@ -41,9 +25,13 @@ select {
     font-size: 3em;
     text-align: center;
     color: #222222;
+    font-weight: bolder;
     padding: 0.4em;
+    border-radius: 0.5em;
+    border: 0.2em solid #222222;
     background: #eeeeee;
-    text-shadow: 0 2px 2px rgba(2, 2, 2, 0.2);
+    box-shadow: 0 8px 6px -1px rgba(2, 2, 2, 0.2);
+
     margin: 1em;
 }
 
@@ -52,8 +40,8 @@ select {
     font-size: 2em;
     text-align: center;
     color: #222222;
+    font-weight: bolder;
     padding: 1em;
-    text-shadow: 0 2px 2px rgba(2, 2, 2, 0.2);
 }
 
 .button:hover {
@@ -62,7 +50,6 @@ select {
 
 #preview {
     max-width: 100%;
-    box-shadow: 0 4px 4px -1px rgba(2, 2, 2, 0.2);
 }
 
 .loader,
@@ -133,4 +120,8 @@ select {
 
 .hide {
     display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }

@@ -6,7 +6,7 @@ import com.amazonaws.regions.Regions
 import com.amazonaws.services.s3.AmazonS3ClientBuilder
 
 private val awsStaticCredentialsProvider = AWSStaticCredentialsProvider(
-    BasicAWSCredentials("","")
+//    BasicAWSCredentials("AKIAIMAUYPG2XO5W7GAA", "xLypUhDCaGTSsgmskWaowSEnjqvimX+WmyS0OkkB")
 )
 
 internal val client = AmazonS3ClientBuilder

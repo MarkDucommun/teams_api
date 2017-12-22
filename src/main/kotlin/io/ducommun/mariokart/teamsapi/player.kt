@@ -19,15 +19,3 @@ internal val players
             name = last().trim()
         )
     })
-
-internal fun List<Image>.markHasRace(id: Int) {
-
-    val image = find { it.id == id } ?: return
-
-    updateImage(image.copy(hasRace = true))
-}
-
-internal fun List<Image>.updateImage(image: Image) {
-
-    filterNot { it.id == image.id }.plus(image).overwriteImages()
-}

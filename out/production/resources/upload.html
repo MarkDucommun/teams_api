@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game-of-Life</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body style="margin: 0; overflow: hidden">
+
+<input type="file" id="uploader" class="file" style="margin: 10px; size: 32px;" accept="image/*">
+
+<div class="flex">
+
+    <label class="button" id="file-label" for="uploader">Upload Race</label>
+
+    <div class="loader hide">Loading...</div>
+
+    <img id="preview" class="hide">
+
+    <select id="players" class="hide" multiple></select>
+
+    <div class="button hide" id="submit">Submit</div>
+
+    <div class="hide" id="thanks">Thanks! Your score will appear on the leaderboard shortly</div>
+</div>
+
+<script src="upload.js"></script>
+</body>
+</html>
